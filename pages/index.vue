@@ -5,6 +5,7 @@
         :zoom="zoom" 
         :center="center"
       >
+      <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
         <l-control class="example-custom-control">
           <v-btn @click="save"> Guardar </v-btn>
         </l-control>
@@ -105,7 +106,7 @@ export default {
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       attribution:
         '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      zoom: 15,
+      zoom: 16,
       center: [-75.80318792584497, -14.010508830892729],
       markerLatLng: [-75.80318792584497, -14.010508830892729],
       polygon: {
